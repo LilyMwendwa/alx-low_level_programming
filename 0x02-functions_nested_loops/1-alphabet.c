@@ -2,9 +2,11 @@
 
 /**
  * Prints alphabet-prints alphabet in lower case
+ * Description: Prints_alphabet
  *
  * Return: zero
  */
+
 void print_alphabet(void)
 {
 	char c;
