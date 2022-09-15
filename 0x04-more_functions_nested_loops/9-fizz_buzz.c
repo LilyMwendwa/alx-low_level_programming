@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
  * main- allows us to print either number
@@ -30,8 +29,14 @@ int main(void)
 		}
 		else
 		{
-		printf("Buzz ");
+		printf("Buzz");
 		}
 	}
+	else
+	{
+	printf("%d ", num);
 	}
+	}
+printf("\n");
+return (0);
 }
