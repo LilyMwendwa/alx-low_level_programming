@@ -9,9 +9,9 @@
 
 int main(void)
 {
-	int num;
+	int num = 1;
 
-	for (num = 1; num < 100; num++)
+	while (num++ < 100)
 	{
 	if ((num % 3 == 0) && (num % 5 == 0))
 	{
