@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <string.h>
 #include "main.h"
 
 /**
@@ -9,12 +9,11 @@
 
 int _strlen(char *s)
 {
-	int length = 0;
+	int len;
 
-	while (*(s + length) != '\0')
+	for (; s != '\0'; s++)
 	{
-		putchar(*(s + length));
-		length++;
+		len += 1;
 	}
-	putchar(10);
+	return (len);
 }
