@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 #include "main.h"
 
 /**
@@ -15,7 +16,7 @@ int check_number(char *str)
 
 	for (count = 0; count < strlen(str); count++)
 	{
-		if (!isdigit(str[count]))
+		if (isdigit(str[count]) == 0)
 		{
 			return (0);
 		}
