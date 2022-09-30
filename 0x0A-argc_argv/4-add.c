@@ -14,17 +14,16 @@ int check_number(char *str)
 {
 	unsigned int count;
 
-	for (count = 0; count < strlen(str); count++)
+	count = 0;
+	while (count < strlen(str))
 	{
-		if (isdigit(str[count]) == 0)
+		if (!isdigit(str[count]))
 		{
 			return (0);
 		}
-		else
-		{
-			return (1);
-		}
+		count++;
 	}
+	return (1);
 }
 
 /**
