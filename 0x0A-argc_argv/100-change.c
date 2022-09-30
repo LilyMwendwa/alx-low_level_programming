@@ -7,7 +7,7 @@
  * to make change for an amount of money.
  * @argc: length of argv
  * @argv: no. of arguments
- * return : 0
+ * Return: 0 if successful, 1 if false
  */
 
 int main(int argc, char *argv[])
