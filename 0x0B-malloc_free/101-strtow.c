@@ -66,17 +66,17 @@ char **strtow(char *str)
 		for (i = 0; i <= len(str) && words; i++)
 		{
 			if ((str[i] != ' ') && (str[i] != '\0'))
-			{
 				size++;
-			}
 			else if (((str[i] == ' ') || (str[i] == '\0')) && (str[i - 1] != ' '))
 			{
 				split[j] = (char *)malloc(sizeof(char) * size + 1);
 				if (split[j] != NULL)
 				{
 					while (temp < size)
+					{
 						split[j][temp] = str[(i - size) + temp];
 						temp++;
+					}
 					split[j][temp] = '\0';
 					size = temp = 0;
 					j++;
